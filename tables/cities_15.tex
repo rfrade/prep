@@ -1,0 +1,21 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{y}&\multicolumn{1}{c}{y}&\multicolumn{1}{c}{y}&\multicolumn{1}{c}{y}\\
+\hline
+treatment\_intensity &      -0.006         &      -0.004         &      -0.007         &      -0.009         \\
+                    &     (0.004)         &     (0.017)         &     (0.004)         &     (0.016)         \\
+[1em]
+Controls            &          No         &         Yes         &          No         &         Yes         \\
+[1em]
+Covid               &          No         &          No         &         Yes         &         Yes         \\
+\hline
+Observations        &         240         &         112         &         240         &         112         \\
+r2\_a                &       0.397         &       0.337         &       0.394         &       0.349         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}
